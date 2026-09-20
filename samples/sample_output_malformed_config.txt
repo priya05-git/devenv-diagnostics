@@ -1,0 +1,2 @@
+Configuration error: Config file is not valid JSON (samples/sample_config_malformed.json): Expecting property name enclosed in double quotes at line 3, column 36
+exit code: 3

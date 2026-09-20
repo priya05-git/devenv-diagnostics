@@ -1,0 +1,3 @@
+{
+  "min_python_version": [3, 9],
+  "required_tools": { "git": null, }   // trailing comma + comment: invalid JSON

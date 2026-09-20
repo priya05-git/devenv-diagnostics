@@ -1,0 +1,11 @@
+{
+  "min_python_version": [3, 9],
+  "min_free_disk_gb": 5000,
+  "required_env_vars": ["PATH", "HOME", "RABTECH_API_KEY"],
+  "required_tools": {
+    "git": null,
+    "docker": null,
+    "kubectl": "1.28.0"
+  },
+  "disk_path": "."
+}

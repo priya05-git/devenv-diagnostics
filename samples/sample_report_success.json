@@ -1,0 +1,80 @@
+{
+  "tool": "devenv-diagnostics",
+  "tool_version": "1.0.0",
+  "generated_at": "2026-09-14T15:25:34.865059+00:00",
+  "hostname": "vm",
+  "config_source": null,
+  "overall_status": "OK",
+  "exit_code": 0,
+  "checks": [
+    {
+      "name": "python_version",
+      "status": "OK",
+      "message": "Python 3.12.3 meets the minimum required version 3.9.",
+      "details": {
+        "current_version": "3.12.3",
+        "required_minimum": "3.9",
+        "implementation": "CPython",
+        "executable": "/home/claude/devenv-diagnostics/.venv/bin/python3"
+      }
+    },
+    {
+      "name": "disk_space",
+      "status": "OK",
+      "message": "9.95 GB free on '.' (minimum 5.0 GB).",
+      "details": {
+        "path": ".",
+        "free_gb": 9.95,
+        "used_gb": 8.58,
+        "total_gb": 251.97,
+        "minimum_required_gb": 5.0
+      }
+    },
+    {
+      "name": "environment_variables",
+      "status": "OK",
+      "message": "All 2 required environment variable(s) are set.",
+      "details": {
+        "required": [
+          "PATH",
+          "HOME"
+        ],
+        "present": {
+          "PATH": "/home/claude/devenv-diagnostics/.venv/bin:/home/claude/.npm-global/bin:/home/...",
+          "HOME": "/root"
+        },
+        "missing": [],
+        "empty": []
+      }
+    },
+    {
+      "name": "developer_tools",
+      "status": "OK",
+      "message": "All 2 configured developer tool(s) are installed and meet version requirements.",
+      "details": {
+        "required_tools": {
+          "git": null,
+          "python3": null
+        },
+        "found": {
+          "git": {
+            "path": "/usr/bin/git",
+            "version": "2.43.0"
+          },
+          "python3": {
+            "path": "/home/claude/devenv-diagnostics/.venv/bin/python3",
+            "version": "3.12.3"
+          }
+        },
+        "missing": [],
+        "outdated": {}
+      }
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "ok": 4,
+    "warn": 0,
+    "error": 0
+  }
+}

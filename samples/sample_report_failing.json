@@ -1,0 +1,83 @@
+{
+  "tool": "devenv-diagnostics",
+  "tool_version": "1.0.0",
+  "generated_at": "2026-09-14T15:25:41.548479+00:00",
+  "hostname": "vm",
+  "config_source": "samples/sample_config_strict.json",
+  "overall_status": "ERROR",
+  "exit_code": 2,
+  "checks": [
+    {
+      "name": "python_version",
+      "status": "OK",
+      "message": "Python 3.12.3 meets the minimum required version 3.9.",
+      "details": {
+        "current_version": "3.12.3",
+        "required_minimum": "3.9",
+        "implementation": "CPython",
+        "executable": "/home/claude/devenv-diagnostics/.venv/bin/python3"
+      }
+    },
+    {
+      "name": "disk_space",
+      "status": "ERROR",
+      "message": "Only 9.95 GB free on '.', below the minimum of 5000.0 GB.",
+      "details": {
+        "path": ".",
+        "free_gb": 9.95,
+        "used_gb": 8.58,
+        "total_gb": 251.97,
+        "minimum_required_gb": 5000.0
+      }
+    },
+    {
+      "name": "environment_variables",
+      "status": "ERROR",
+      "message": "Environment variable issue(s): RABTECH_API_KEY missing",
+      "details": {
+        "required": [
+          "PATH",
+          "HOME",
+          "RABTECH_API_KEY"
+        ],
+        "present": {
+          "PATH": "/home/claude/devenv-diagnostics/.venv/bin:/home/claude/.npm-global/bin:/home/...",
+          "HOME": "/root"
+        },
+        "missing": [
+          "RABTECH_API_KEY"
+        ],
+        "empty": []
+      }
+    },
+    {
+      "name": "developer_tools",
+      "status": "ERROR",
+      "message": "Developer tool issue(s) -- missing: docker, kubectl",
+      "details": {
+        "required_tools": {
+          "git": null,
+          "docker": null,
+          "kubectl": "1.28.0"
+        },
+        "found": {
+          "git": {
+            "path": "/usr/bin/git",
+            "version": "2.43.0"
+          }
+        },
+        "missing": [
+          "docker",
+          "kubectl"
+        ],
+        "outdated": {}
+      }
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "ok": 1,
+    "warn": 0,
+    "error": 3
+  }
+}

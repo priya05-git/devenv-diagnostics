@@ -1,0 +1,17 @@
+============================================================
+  Developer Environment Diagnostics Report
+============================================================
+Generated at : 2026-09-14T15:25:41.610256+00:00
+Hostname     : vm
+Tool version : 1.0.0
+Config file  : samples/sample_config_strict.json
+------------------------------------------------------------
+[OK]    python_version: Python 3.12.3 meets the minimum required version 3.9.
+[ERROR] disk_space: Only 9.95 GB free on '.', below the minimum of 5000.0 GB.
+[ERROR] environment_variables: Environment variable issue(s): RABTECH_API_KEY missing
+[ERROR] developer_tools: Developer tool issue(s) -- missing: docker, kubectl
+------------------------------------------------------------
+Summary: 4 checks -- 1 ok, 0 warn, 3 error
+Overall status: ERROR
+Exit code: 2
+============================================================
